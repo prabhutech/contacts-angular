@@ -1,0 +1,21 @@
+{
+  "name": "avinetworks",
+  "version": "0.0.0",
+  "authors": [
+    "Prabhakar Doraisamy <prabhutech@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.11",
+    "bootstrap": "~3.3.2",
+    "parse-js-sdk": "~1.3.1",
+    "angular-route": "~1.3.11"
+  }
+}

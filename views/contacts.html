@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col6">
+        <h4>Contacts List</h4>
+    </div>
+    <div class="col6">
+        <a href="#/contact/new" class="btn btn-primary pull-right">Add New...</a>
+        <a href="" class="btn btn-danger pull-right" ng-click="deleteAllContacts()">Delete All</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col12">
+        <table class="table table-bordered">
+            <tr>
+                <td>Name</td>
+                <td>DOB</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Actions</td>
+            </tr>
+            <tr ng-repeat="contact in contacts">
+                <td>{{contact.attributes.name}}</td>
+                <td>{{contact.attributes.dob}}</td>
+                <td>{{contact.attributes.email}}</td>
+                <td>{{contact.attributes.phone}}</td>
+                <td><a href="" ng-click="deleteContact(contact)"><i class="glyphicon glyphicon-trash"></i></a> &nbsp;
+                    <a href="#/contact/{{contact.id}}" ng-click=""><i class="glyphicon glyphicon-edit"></i></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
