@@ -1,0 +1,3 @@
+# contacts-angular
+
+bower install
